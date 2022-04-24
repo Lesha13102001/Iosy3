@@ -109,6 +109,7 @@ class Ui_Dialog_people(object):
             cursor.execute(show_query)
             rows=cursor.fetchall()
             connection.commit()
+            print(rows)
             self.tableWidget_people.setRowCount(len(rows))
             tablerow = 0
             for row in rows:

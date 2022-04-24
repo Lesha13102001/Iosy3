@@ -1,4 +1,4 @@
 host = "localhost"
 user = "root"
 password = "Lb2001"
-db_name = "sanatori"
+db_name = "санаторий"

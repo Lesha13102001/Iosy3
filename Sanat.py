@@ -495,8 +495,7 @@ class Ui_Dialog(object):
                 return
         cursor = connection.cursor()
         with connection.cursor() as cursor:
-            insert_query = "INSERT INTO `usr_app` (name, surname, patronymic, age, telephone, data_st, data_end, diagnoz, programma) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');" % (
-            Name, Surname, Patronymic, Age, Tel, Date_st, Date_end, Diagn, Prog)
+            insert_query = "INSERT INTO `usr_app` (name, surname, patronymic, age, telephone, data_st, data_end, diagnoz, programma) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');" % (Name, Surname, Patronymic, Age, Tel, Date_st, Date_end, Diagn, Prog)
             cursor.execute(insert_query)
             connection.commit()
         add = QMessageBox()
